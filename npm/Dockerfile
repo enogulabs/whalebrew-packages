@@ -1,2 +1,2 @@
-FROM node
+FROM node:lts-alpine
 ENTRYPOINT ["npm"]

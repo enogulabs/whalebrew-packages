@@ -9,4 +9,4 @@ WORKDIR /app
 RUN curl -L https://github.com/digitalocean/doctl/releases/download/v${DOCTL_VERSION}/doctl-${DOCTL_VERSION}-linux-amd64.tar.gz  | tar xz
 
 LABEL io.whalebrew.config.environment '["DIGITALOCEAN_ACCESS_TOKEN"]'
-ENTRYPOINT ["doctl"]
+ENTRYPOINT ["./doctl"]
